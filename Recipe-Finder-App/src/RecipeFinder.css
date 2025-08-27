@@ -1,0 +1,99 @@
+/* RecipeFinder.css */
+body{
+  overflow:hidden ;
+}
+.recipe-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-recipe {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-recipe input {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-recipe input:focus {
+  border-color: #ff704d;
+}
+
+.input-recipe button {
+  background-color: #ff704d;
+  border: none;
+  color: white;
+  padding: 11px 25px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.input-recipe button:hover {
+  background-color: #e65c33;
+}
+
+.recipes-instructions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.recipe-card {
+  background-color: hsl(0, 8%, 90%);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  padding: 5px;
+  text-align: center;
+
+}
+
+
+.recipe-card img {
+  width: 36%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #2b2a2a;
+}
+
+.instruction {
+  text-align: left;
+  font-size: 16px;
+  color: hsl(0, 2%, 12%);
+  height: 38%;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  font-weight: bold;
+  padding: 5px;
+}
